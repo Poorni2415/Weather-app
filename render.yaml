@@ -1,0 +1,17 @@
+services:
+
+  - type: web
+    name: weather-backend
+    env: docker
+    image: poorvi1218/weather-backend:1.0
+    plan: free
+    region: singapore
+    autoDeploy: true
+
+  - type: web
+    name: weather-frontend
+    env: docker
+    image: poorvi1218/weather-frontend:1.0
+    plan: free
+    region: singapore
+    autoDeploy: true
